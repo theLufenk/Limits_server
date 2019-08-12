@@ -23,6 +23,17 @@ else {
 
     exports.config = {
         PORT : 8000,
-        dbURI : 'mongodb://thapliyal:shivam@localhost/admin'
+        dbURI : 'mongodb://thapliyal:shivam@192.168.0.113/admin'
     };
 }
+
+
+// db.addUser(
+//     {
+//       user: "thapliyal",
+//       pwd: "shivam",
+//       roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+//     }
+//   )
+
+  //db.addUser({ user: "thapliyal",  pwd: "shivam", roles: [  "userAdminAnyDatabase", "admin"]})
