@@ -16,13 +16,13 @@ if (process.env.NODE_ENV == 'dev') {
 } else if (process.env.NODE_ENV == 'live') {
     exports.config = {
         PORT : 8002,
-        dbURI : 'mongodb://fitghostLive:08112aae2d1b9b68ea4e5ab339714a17@52.38.210.131/fitghostLive'
+        dbURI : 'mongodb://thapliyalshivam:crednets1996@52.86.124.174/admin'
     }
 }*/
 else {
 
     exports.config = {
         PORT : 8000,
-        dbURI : 'mongodb://thapliyalshivam:crednets1996@52.86.124.174/admin'
+        dbURI : 'mongodb://thapliyal:shivam@localhost/admin'
     };
 }
