@@ -23,9 +23,11 @@ else {
 
     exports.config = {
         PORT : 8000,
-        dbURI : 'mongodb://thapliyal:shivam@192.168.0.113/admin'
+        dbURI : 'mongodb://thapliyal:shivam@host.docker.internal:27017/admin'
     };
 }
+
+        //dbURI : 'mongodb://thapliyal:shivam@127.0.01:27017/admin'
 
 
 // db.addUser(
