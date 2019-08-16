@@ -1,4 +1,8 @@
 version: "2"
+
+networks:
+  web-network:
+  
 services:
   app:
     container_name: node
@@ -8,6 +12,8 @@ services:
       - "8000:8000"
     links:
       - mongo
+    networks:
+      - web-network
   mongo:
     container_name: mongo
     image: mongo:3.4.1
@@ -15,4 +21,6 @@ services:
       - ./data:/data/db
     ports:
        - "27014:27014"
+    networks:
+      - web-network
 
